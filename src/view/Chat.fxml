@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Chatparent" prefHeight="415.0" prefWidth="573.0" style="-fx-background-color: #2e2e2e;" stylesheets="@../../../../workplace%20of%20web/h5/Chat.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ChatController">
+   <children>
+      <TextArea fx:id="chatFrame" editable="false" layoutX="14.0" layoutY="36.0" prefHeight="232.0" prefWidth="412.0" style="-fx-font-family: &quot;宋体&quot;;">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font></TextArea>
+      <TextField fx:id="inputFrame" alignment="TOP_LEFT" layoutX="14.0" layoutY="281.0" prefHeight="123.0" prefWidth="412.0" style="-fx-background-color: #fff; -fx-background-radius: 5px 5px 0 0;" />
+      <Label layoutX="234.0" layoutY="9.0" prefHeight="8.0" prefWidth="99.0" text="Welcome! " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <VBox fx:id="memberList" layoutX="436.0" layoutY="36.0" prefHeight="368.0" prefWidth="123.0" spacing="5.0" style="-fx-background-color: #fff; -fx-background-radius: 5px; -fx-border-radius: 5px;" stylesheets="@../../../../workplace%20of%20web/h5/Chat.css">
+         <children>
+            <Label fx:id="memberFrame" prefHeight="27.0" prefWidth="123.0" style="-fx-background-color: #44d7ff5e; -fx-background-radius: 5px; -fx-border-radius: 5px;" styleClass="friendLabel" text="lzp是是是" textAlignment="CENTER">
+               <font>
+                  <Font name="Wingdings" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </VBox>
+      <Button fx:id="buttonSend" layoutX="348.0" layoutY="379.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="78.0" style="-fx-background-color: #43d3fb;" text="Send" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Regular" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="clear" layoutX="258.0" layoutY="379.0" mnemonicParsing="false" onMouseClicked="#clear" prefHeight="23.0" prefWidth="78.0" style="-fx-background-color: #43d3fb85;" text="Clear" textFill="#686868" />
+      <Label fx:id="buttonClose" layoutX="545.0" layoutY="2.0" onMouseClicked="#close" prefHeight="23.0" prefWidth="16.0" text="×" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="2.0" onMouseClicked="#minChat" prefHeight="23.0" prefWidth="16.0" text="-" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
